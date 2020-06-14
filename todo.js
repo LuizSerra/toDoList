@@ -7,3 +7,12 @@ var todos = [
     'Estudar JavaScript.',
     'Acessar Conteúdo de Estudo.',
 ]
+
+for (todo of todos) {
+    var todoElement = document.createElement('li');
+    var todoText = document.createTextNode(todo);
+
+    todoElement.appendChild(todoText);
+    listElement.appendChild(todoElement);
+
+}
